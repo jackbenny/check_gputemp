@@ -28,7 +28,7 @@
 #                                                                             #
 ###############################################################################
 
-VERSION="Version 1.0"
+VERSION="Version 1.1"
 AUTHOR="(c) 2011 Jack-Benny Persson (jack-benny@cyberinfo.se)"
 
 # Sensor program
@@ -159,7 +159,7 @@ while [[ -n "$1" ]]; do
 	   if [[ -z "$2" ]]; then
 		printf "\nOption $1 requires an argument"
 		print_help
-		exit $EXIT_UNKNOWN
+		exit $STATE_UNKNOWN
 	   fi
 		adapter=$2
            shift 2
