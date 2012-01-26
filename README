@@ -1,0 +1,19 @@
+ABOUT
+check_gputemp is a Nagios plugin which checks the GPU temperature of ATI based 
+graphics card. It uses the aticonfig tool from ATI's proprietary driver fglrx.
+
+This script checks the GPU temperature of ATI based graphics card using the 
+aticonfig tool from their proprietary driver fglrx. The script is written in 
+Bash and complies with the Nagios development guidelines. For example it uses 
+the -w, -c and -v arguments, has some basic sanity checks and has an exit 3 
+catch all code. The script should behave like any other Nagios plugin. 
+It should run under any modern Linux distribution. It has been tested and known
+to work under Debian based systems with Nagios 3.x
+
+HISTORY
+This plugin is based on check_temp which I wrote earlier this year. The code is
+almost identical to it. Many thanks to Chad Columbus who sent me
+bugfixes and corrections for check_temp. Without check_temp their would never
+have been check_gputemp.
+The plugin were submitted to Nagios Exchange in january 2012.
+
