@@ -28,7 +28,7 @@
 #                                                                             #
 ###############################################################################
 
-VERSION="Version 1.1"
+VERSION="Version 1.2"
 AUTHOR="(c) 2011 Jack-Benny Persson (jack-benny@cyberinfo.se)"
 
 # Sensor program
@@ -150,7 +150,7 @@ while [[ -n "$1" ]]; do
 	   shift 2
            ;;
 
-       -?)
+       -\?)
            print_help
            exit $STATE_OK
            ;;
