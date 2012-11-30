@@ -216,21 +216,23 @@ ${SENSORPROG} --adapter=${adapter} --od-gettemperature | grep "Temperature"
 printf "\n\n"
 fi
 
+# Get performance data for Nagios "Performance Data" field
+PERFDATA=`${SENSORPROG} --adapter=${adapter} --od-gettemperature | grep "Temperature"`
 
 # And finally check the temperature against our thresholds
 if [[ "$TEMP" -gt "$thresh_crit" ]]; then
 	# Temperature is above critical threshold
-	echo "GPU $adapter CRITICAL - Temperature is $TEMP"
+	echo "GPU $adapter CRITICAL - Temperature is $TEMP | $PERFDATA"
 	exit $STATE_CRITICAL
 
   elif [[ "$TEMP" -gt "$thresh_warn" ]]; then
 	# Temperature is above warning threshold
-	echo "GPU $adapter WARNING - Temperature is $TEMP"
+	echo "GPU $adapter WARNING - Temperature is $TEMP | $PERFDATA"
 	exit $STATE_WARNING
 
   else
 	# Temperature is ok
-	echo "GPU $adapter OK - Temperature is $TEMP"
+	echo "GPU $adapter OK - Temperature is $TEMP | $PERFDATA"
 	exit $STATE_OK
 fi
 exit 3
