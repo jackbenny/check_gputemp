@@ -15,5 +15,5 @@ This plugin is based on check_temp which I wrote earlier this year. The code is
 almost identical to it. Many thanks to Chad Columbus who sent me
 bugfixes and corrections for check_temp. Without check_temp their would never
 have been check_gputemp.
-The plugin were submitted to Nagios Exchange in january 2012.
+This plugin was submitted to Nagios Exchange in January 2012.
 
