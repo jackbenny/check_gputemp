@@ -25,10 +25,12 @@
 # Nagios plugin to monitor GPU temperature with aticonfig.                    #
 # This only works on ATI cards with the proprietary driver (fglrx).           # 
 # Written in Bash (and uses sed & awk).                                       #
+# Latest version of check_gputemp can be found at the below URL:              #
+# https://bitbucket.org/jackbenny/check_gputemp                               #
 #                                                                             #
 ###############################################################################
 
-VERSION="Version 1.2"
+VERSION="Version 1.3"
 AUTHOR="(c) 2011 Jack-Benny Persson (jack-benny@cyberinfo.se)"
 
 # Sensor program
