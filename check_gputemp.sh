@@ -26,7 +26,7 @@
 # This only works on ATI cards with the proprietary driver (fglrx).           # 
 # Written in Bash (and uses sed & awk).                                       #
 # Latest version of check_gputemp can be found at the below URL:              #
-# https://bitbucket.org/jackbenny/check_gputemp                               #
+# https://github.com/jackbenny/check_gputemp                                  #
 #                                                                             #
 ###############################################################################
 
